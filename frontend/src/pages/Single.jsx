@@ -1,4 +1,8 @@
 import React from 'react'
+import Edit from '../images/edit.png'
+import Delete from '../images/delete.png'
+import { Link } from 'react-router-dom'
+import Menu from '../components/Menu'
 
 const Single = () => {
   return (
@@ -10,10 +14,20 @@ const Single = () => {
        <div className="info">
           <span>John</span>
           <p>Posted 2 days ago</p>
-        </div>   
+        </div>  
+        <div className="edit">
+          <Link to={`/write?edit=2`}>
+          <img src={Edit} alt="" />
+          </Link>
+         
+          <img src={Delete} alt="" />
+        </div> 
+        
       </div>
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis!</h1>
+      <p></p>
       </div>
-      <div className="menu">m</div>
+      <Menu/>
     </div>
   )
 }

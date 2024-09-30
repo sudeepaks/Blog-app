@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom' 
 
-const posts = []
+const posts = {}
 
 const  Home = () => {
   return (
@@ -18,7 +18,8 @@ const  Home = () => {
                             <p>{post.description}</p>
                             <button>Read Description</button>
                         </Link>
-                     </div>    
+                     </div>  
+                     </div>  
             ))}
        </div> 
     </div>
